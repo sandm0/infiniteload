@@ -1,0 +1,425 @@
+@charset "utf-8";
+
+
+.slogan-screen {
+   width: 640px;
+   height: 1136px;
+   background: url(../images/bg.jpg) center center;
+   background-size: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 2;
+}
+
+.navbar {
+  height: 88px;
+  line-height: 88px;
+  position: relative;
+}
+
+.navbar .info i{
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: #E6EBEC;
+  font-size: 32px;
+  z-index: 9;
+}
+
+/*登陆面板*/
+.register {
+  display: none;
+}
+.register .panel {
+  position: absolute;
+  top: 88px;
+  width: 100%;
+  z-index: 20;
+  overflow-y: hidden;
+  max-height: 0;
+  -webkit-transition: max-height .3s ease-out;
+  transition: max-height .3s ease-out;
+}
+.register.active {
+  display: block;
+}
+.register.active .modal {
+  position: absolute;
+  width: 640px;
+  height: 1136px;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 1;
+}
+.register.active .panel {
+  position: absolute;
+  top: 88px;
+  width: 100%;
+  z-index: 20;
+  max-height: 700px;
+  transform-origin: 50% 0;
+  animation: slide-down .5s ease-in;
+  transition: max-height .2s ease-out;
+  -webket-transform-origin: 50% 0;
+  -webket-animation: slide-down .5s ease-in;
+  -webket-transition: max-height .2s ease-out;
+}
+
+.register.active .panel .item {
+  padding: 0 20px;
+  border-bottom: 1px solid #222;
+  color:#fff;
+  position: relative;
+}
+
+.register.active .item  a {
+  color: #fff;
+  line-height: 48px;
+}
+
+.register.active .item  i {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  position: absolute;
+  top: 32px;
+  right: 24px;
+  transform: rotate(-45deg);
+}
+
+.register.active .item.center{
+  text-align: center;
+}
+
+.register.active .item a.btn {
+  display: inline-block;
+  padding: 10px 80px;
+  background-color: #202324;
+  text-align: center;
+}
+
+.register.active .item a.btn {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #202324;
+  text-align: center;
+}
+
+.register.active .item a.btn:hover {
+  background-color: #313131;
+  text-decoration: none;
+}
+
+.register.active .item a.btn-reg {
+  padding-left: 120px;
+  padding-right: 120px;
+  background-color: #13C293;
+  border: 1px solid #077A58;
+  border-radius: 2px;
+  margin-right: 20px;
+  font-weight: 600;
+}
+.register.active .item a.btn-reg:hover {
+  background-color: #077A58;
+  text-decoration: none;
+}
+.register.active .item a.btn-login {
+  background-color: #fff;
+  border: 1px solid #EDFEFF;
+  border-radius: 2px;
+  color: #333;
+  font-weight: 600;
+}
+
+.register.active .item a.btn-login:hover {
+  background-color: #D0D0D0;
+  text-decoration: none;
+}
+
+
+
+
+.logo {
+  width: 128px;
+  height: 288px;
+  background: url(../images/logo.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 300px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.logo h1 {
+  text-indent: -2000px;
+}
+
+.search-box {
+  width: 560px;
+  height: 64px;
+  line-height: 64px;
+  border-radius: 4px;
+  background: #FFF;
+  padding: 0 20px 0 20px;
+  text-align: left;
+  position: absolute;
+  top: 550px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-sizing: border-box;
+  color: #676767
+}
+
+.search-box input {
+  border: 0;
+  font-size: 24px;
+  width: 400px;
+}
+
+.search-box i {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 32px;
+}
+
+.tip {
+  position:absolute;
+  left: 0;
+  right: 0;
+  bottom: 80px;
+  margin: auto;
+  width: 200px;
+  color: #fff;
+  text-align: center;
+}
+
+.tip i {
+  display: inline-block;
+  transform: rotate(180deg);
+  font-size: 32px;
+}
+.tip p {
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+/*page页面*/
+#page {
+ width: 640px;
+ position: relative;
+ z-index: 1;
+ background: #eee;
+ top: 0;
+ left: 0;
+}
+#page .navbar {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #a1a1a1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+#page .brand {
+  margin-left: 20px;
+}
+#page .brand a {
+  position: absolute;
+  top: 10px;
+}
+#page .brand span {
+  font-size: 36px;
+  margin-left: 60px;
+  color: #333;
+}
+#page .page-search-box {
+  position: absolute;
+  top: 0;
+  right: 120px;
+}
+#page .page-search-box i{
+  font-size: 32px;
+}
+#page .navbar .info.toggle i {
+  color: #333;
+}
+#page .register .item {
+  background: rgba(0, 0, 0, .6);
+}
+#page .contWrap {
+  padding: 100px 0 0 0;
+}
+#page .book-list .book-item {
+  border: none;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(50%,transparent),color-stop(50%,transparent),color-stop(100%,#dadada));
+  background-image: -webkit-linear-gradient(top,transparent 50%,#dadada 50%,#dadada 100%);
+  background-image: linear-gradient(to bottom,transparent 50%,#dadada 50%,#dadada 100%);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+.layout-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.book-cover {
+  display: block;
+  margin: 20px 0 20px 20px;
+  position: relative;
+  text-align: center;
+}
+#page .book-item .book-cover img {
+  width: 200px;
+  height: 250px;
+}
+#page .book-item .book-info {
+    padding: 20px 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+    color: #343434;
+}
+
+#page .book-info .book-title {
+  line-height: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 26px;
+  width: 200px;
+}
+
+#page .book-info .book-author {
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #d0d0d0;
+}
+
+#page .book-info .book-discription {
+  line-height: 36px;
+  margin-top: 20px;
+  margin-right: 40px;
+  height: 105px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  font-size: 24px;
+}
+#page .book-item .price {
+  position: relative;
+}
+#page .book-item .price i {
+  position:absolute;
+  top: 36px;
+  right: 30px;
+  color: #FF3411;
+  font-size: 30px;
+  font-style: normal;
+  white-space: nowrap;
+}
+#page .more {
+  height: 1px;
+  /*visibility: hidden;*/
+}
+#page .loading {
+  background: rgba(255, 255, 255, .5);
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: none;
+}
+
+#page .loading span{
+  display: block;
+  margin-top: 20px;
+}
+
+#page .loading .animation {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  box-shadow: 10px 10px 0 0 #00FFF0, -10px -10px 0 0 #FF5E98;
+  -webkit-animation: circle 2s linear infinite;
+  animation: circle 2s linear infinite;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+[data-ctrl-name=scrollview] {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex
+}
+[data-ctrl-name=scrollview][data-direction=vertical] {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+[data-ctrl-name=scrollview][data-direction=horizontal] {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+[data-ctrl-name=scrollview] .scroll-wrap {
+    display: block;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    position: relative
+}*/

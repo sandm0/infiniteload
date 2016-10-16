@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
+    <meta name="keywords" content="abook, reading">
+    <meta name="description" content="a simlpe web for book">
+    <title>A book</title>
+    <link rel="stylesheet" href="./assets/styles/iconfont.css">
+    <link rel="stylesheet" href="./assets/styles/animation.css">
+    <script src="./assets/js/flexible_css.js"></script>
+    <script src="./assets/js/flexible.js"></script>
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+<body>
+  <div id="slogan-screen" class="slogan-screen">
+      <div class="navbar">
+          <div class="info toggle ">
+              <i class="iconfont">&#xe60d;</i>
+          </div>
+          <div class="register ">
+              <div class="modal"></div>
+              <ul class="panel">
+                  <li class="item center">
+                      <a href="/" class="btn btn-reg">注册</a>
+                      <a href="/" class="btn btn-login">登录</a>
+                  </li>
+                  <li class="item">
+                      最新 <i class="arrow"></i>
+                  </li>
+                  <li class="item">
+                      热门 <i class="arrow"></i>
+                  </li>
+                  <li class="item">
+                      发现 <i class="arrow"></i>
+                  </li>
+                  <li class="item center">
+                      <a href="/" class="btn">访问电脑版本</a>
+                      <a href="/" class="btn">下载客户端</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="logo">
+          <h1>abook</h1>
+      </div>
+      <form class="search-box">
+          <input type="text" placeholder="搜索你喜欢的">
+          <i class="iconfont">&#xe610;</i>
+      </form>
+      <div class="tip">
+          <i class="iconfont">&#xe614;</i>
+          <p>向上滑动页面</p>
+      </div>
+  </div>
+  <div id="page">
+    <div class="navbar fixed">
+        <div class="brand">
+            <a href="/"><img src="assets/images/brand.png"></a><span>发现</span>
+        </div>
+        <form class="page-search-box">
+            <i class=iconfont>&#xe610;</i>
+        </form>
+        <div class="info toggle ">
+            <i class="iconfont">&#xe60d;</i>
+        </div>
+        <div class="register">
+            <ul class="panel">
+                <li class="item center">
+                    <a href="/" class="btn btn-reg">注册</a>
+                    <a href="/" class="btn btn-login">登录</a>
+                </li>
+                <li class="item">
+                    最新 <i class="arrow"></i>
+                </li>
+                <li class="item">
+                    热门 <i class="arrow"></i>
+                </li>
+                <li class="item">
+                    发现 <i class="arrow"></i>
+                </li>
+                <li class="item center">
+                    <a href="/" class="btn">访问电脑版本</a>
+                    <a href="/" class="btn">下载客户端</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contWrap">
+      <div class="loading">
+          <div style="text-align:center;margin-top: 64px;">
+              <span class="animation"></span>
+              <span>加载中...</span>
+          </div>
+      </div>
+        <section class="card-combine">
+          <div class="book-list">
+              <ul>
+                  <!-- <li class="book-item">
+                      <div class="layout-box">
+                          <a href="/" class="book-cover">
+                              <img src="#" >
+                          </a>
+                          <a href="/" class="book-info">
+                              <div class="book-title"></div>
+                              <div class="boo-author"></div>
+                              <div class="book-discription"></div>
+                          </a>
+                          <span class="price"><i></i></span>
+                      </div>
+                  </li> -->
+              </ul>
+              <div class="more"></div>
+          </div>
+        </section>
+    </div>
+    <script src="./assets/js/fastclick.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>$(function() { FastClick.attach(document.body); });</script>
+  </div>
+  </div>
+</body>
+
+</html>
