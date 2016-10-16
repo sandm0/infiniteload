@@ -56,11 +56,11 @@
           count: 20
         },
         beforeSend: function () {
-          $('#page .loading').css('top', $(win).height()*0.5 - 100 + 'px').fadeIn(500);
+          $('#page .loading').css('top', $(win).height()*0.5 - 100 + 'px').fadeIn(200);
         },
         success: function (data) {
            render(data.books);
-           $('#page .loading').fadeOut(500).hide();
+           $('#page .loading').fadeOut(200).hide();
         },
         error: function(err){
            console.log(err);
