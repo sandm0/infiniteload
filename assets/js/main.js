@@ -17,7 +17,6 @@
     });
     $tip.on('touchstart', function(){
         $slogan.animate({top: '-100%'}, 500).hide();
-        $('body').css('overflow','auto');
     });
     var bookTags = ['漫画','绘本','推理','青春','言情','科幻','武侠','奇幻','童话','诗歌','散文','名著'];
     function getTag(){
@@ -75,7 +74,7 @@
             str += '<li class="book-item"><div class="layout-box"><a href="'
                 + obj[i].url
                 + '" class="book-cover"><img src="'
-                + obj[i].images.small
+                + obj[i].images.medium
                 + '" ></a><a href="/" class="book-info"><div class="book-title">'
                 + obj[i].title
                 + '</div><div class="book-author">'

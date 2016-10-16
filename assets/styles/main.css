@@ -1,13 +1,11 @@
 @charset "utf-8";
-body {
-  overflow: hidden;
-}
+
 .slogan-screen {
   width: 10rem;
   height: 17.75rem;
   background: url(../images/bg.jpg) center center;
   background-size: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
@@ -289,6 +287,7 @@ body {
   background-position: bottom;
   background-color: #fff;
   margin-bottom: 0.234375rem;
+  position: relative;
 }
 
 .layout-box {
@@ -359,7 +358,8 @@ body {
 }
 
 #page .book-item .price {
-  position: relative;
+  position: absolute;
+  right: 0;
 }
 
 #page .book-item .price i {
@@ -381,12 +381,13 @@ body {
   background: rgba(255, 255, 255, .5);
   width: 200px;
   height: 200px;
-  border-radius: 0.125rem;
-  position: absolute;
+  border-radius: 8px;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   margin: auto;
+  z-index: 20;
   display: none;
 }
 
