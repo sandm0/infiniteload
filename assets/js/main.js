@@ -15,7 +15,7 @@
 
         $register.toggleClass('active');
     });
-    $tip.on('touchstart', function(){
+    $(window).on('touchmove', function(){
         $slogan.animate({top: '-100%'}, 500).hide();
     });
     var bookTags = ['漫画','绘本','推理','青春','言情','科幻','武侠','奇幻','童话','诗歌','散文','名著'];
